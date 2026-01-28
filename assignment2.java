@@ -7,8 +7,12 @@ public class deneme {
         int cap = input.nextInt();
         int [] numbers = new int[cap];
         boolean check = false;
+        System.out.println("1-Finding min value of an array.");
+        System.out.println("2-Finding max value of an array.");
+        System.out.println("3-Finding average and then the difference of an array.");
+        System.out.println("4-Finding sum of odd and even index of an array.");
         System.out.print("Enter your choice 1-4. 5 for the exit.");
-        int choice = in.nextInt;
+        int choice = input.nextInt;
         while(!check){
             if(choice = 1){
                 findMin(numbers);
