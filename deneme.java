@@ -31,4 +31,23 @@ public class deneme {
             }
         }
     }
+       public static int findMin(int[] numbers) {
+        int min = numbers[0];
+        for (int num : numbers) {
+            if (num < min) {
+                min = num;
+            }
+        }
+        return min;
+    }
+
+    public static int findMax(int[] arr) {
+        int max = arr[0];
+        for (int num : arr) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        return max;
+    }
     }
