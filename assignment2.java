@@ -8,5 +8,8 @@ public class deneme {
         input.close();
         int [] numbers = new int[cap];
         
+        for(int i = 0 ; i < numbers.length ; i++){
+            numbers[i] = (int) (Math.random()*100) + 1;
+        }
     }
     }
