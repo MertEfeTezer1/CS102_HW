@@ -11,6 +11,7 @@ public class deneme {
         for(int i = 0 ; i < numbers.length ; i++){
             numbers[i] = (int) (Math.random()*100) + 1;
         }
+        System.out.println("Generated array: " + Arrays.toString(numbers));
         boolean check = false;
         while(!check){
             System.out.println("1-Finding min value of an array.");
