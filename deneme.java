@@ -43,7 +43,7 @@ public class deneme {
         for (int number : numbers){
             sum = sum + number;
         }
-        double average = (double) (sum / numbers.length);
+        double average = (double) sum / numbers.length;
         double[] differenceNumbers = new double[numbers.length];
         for(int i = 0;i<numbers.length;i++){
             differenceNumbers[i] = numbers[i] - average;
