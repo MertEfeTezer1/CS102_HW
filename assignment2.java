@@ -33,6 +33,13 @@ public class deneme {
             else if(choice == 5){
                 check = true;
             }
+            
+            System.out.println("1-Finding min value of an array.");
+            System.out.println("2-Finding max value of an array.");
+            System.out.println("3-Finding average and then the difference of an array.");
+            System.out.println("4-Finding sum of odd and even index of an array.");
+            System.out.print("Enter your choice 1-4. 5 for the exit.");
+            choice = input.nextInt();
         }
     }
     public static double[] findAverageAndDifference(int[]numbers){
@@ -65,5 +72,20 @@ public class deneme {
             }
         }
         return max;
+    }
+
+    public static void findSum(int[] arr) {
+        int evenSum = 0;
+        int oddSum = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (i % 2 == 0) {
+                evenSum += arr[i];
+            } else {
+                oddSum += arr[i];
+            }
+        }
+
+        System.out.println("Odd sum: " + oddSum + " Even sum: " + evenSum);
     }
 }
