@@ -1,23 +1,25 @@
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class deneme {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter a number for cap the array");
+        System.out.print("Enter a number for cap the array: ");
         int cap = input.nextInt();
         int [] numbers = new int[cap];
         
         for(int i = 0 ; i < numbers.length ; i++){
             numbers[i] = (int) (Math.random()*100) + 1;
-            }
+        }
         boolean check = false;
-        System.out.println("1-Finding min value of an array.");
-        System.out.println("2-Finding max value of an array.");
-        System.out.println("3-Finding average and then the difference of an array.");
-        System.out.println("4-Finding sum of odd and even index of an array.");
-        System.out.print("Enter your choice 1-4. 5 for the exit.");
-        int choice = input.nextInt();
         while(!check){
+            System.out.println("1-Finding min value of an array.");
+            System.out.println("2-Finding max value of an array.");
+            System.out.println("3-Finding average and then the difference of an array.");
+            System.out.println("4-Finding sum of odd and even index of an array.");
+            System.out.println("5-Exit.");
+            System.out.print("Enter your choice 1-5: ");
+            int choice = input.nextInt();
             if(choice == 1){
                 findMin(numbers);
             }
@@ -33,16 +35,9 @@ public class deneme {
             else if(choice == 5){
                 check = true;
             }
-            
-            System.out.println("1-Finding min value of an array.");
-            System.out.println("2-Finding max value of an array.");
-            System.out.println("3-Finding average and then the difference of an array.");
-            System.out.println("4-Finding sum of odd and even index of an array.");
-            System.out.print("Enter your choice 1-4. 5 for the exit.");
-            choice = input.nextInt();
         }
     }
-    public static double[] findAverageAndDifference(int[]numbers){
+    public static void findAverageAndDifference(int[]numbers){
         int sum = 0;
         for (int number : numbers){
             sum = sum + number;
@@ -52,7 +47,7 @@ public class deneme {
         for(int i = 0;i<numbers.length;i++){
             differenceNumbers[i] = numbers[i] - average;
         }
-        return differenceNumbers;
+        System.out.println(Arrays.toString(differenceNumbers));
     }
     public static int findMin(int[] arr) {
         int min = arr[0];
