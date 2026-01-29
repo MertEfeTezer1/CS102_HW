@@ -48,7 +48,7 @@ public class deneme {
         for(int i = 0;i<numbers.length;i++){
             differenceNumbers[i] = numbers[i] - average;
         }
-        System.out.println(Arrays.toString(differenceNumbers));
+        System.out.println("The difference of the elements from average: " + Arrays.toString(differenceNumbers));
     }
     public static void findMin(int[] arr) {
         int min = arr[0];
